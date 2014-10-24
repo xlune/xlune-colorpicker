@@ -1,0 +1,26 @@
+{
+  "name": "xlune-colorpicker",
+  "version": "0.1.0",
+  "homepage": "https://github.com/xlune/xlune-colorpicker",
+  "authors": [
+    "xlune <ichikawa@xlune.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "web",
+    "components",
+    "color",
+    "picker"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "webcomponentsjs": "~0.4.2"
+  }
+}

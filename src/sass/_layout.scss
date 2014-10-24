@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+$lineWidth: 1px;
+$lineColor: #888;
+
+#colorPicker {
+    position: relative;
+    left: 0;
+    top: 0;
+
+    #colorButtonWrap {
+        display: inline-block;
+        border: 1px solid #000;
+        padding: 0;
+        margin: 0;
+        line-height: 0;
+        #colorButton {
+            width: 22px;
+            height: 22px;
+            border: 1px solid #FFF;
+            outline: none;
+            background-color: #F00;
+        }
+    }
+
+    #colorPalette {
+        position: absolute;
+        left: 0;
+        top: 24px;
+        display: none;
+        width: 430px;
+        @include clearfix;
+        @include box-shadow( 0 0 10px #CCC);
+        @include border-radius(5px);
+        background-color: #EEE;
+        border: $lineWidth solid $lineColor;
+        padding: 10px !important;
+        & > div {
+            float: left;
+            &#brightnessBox {
+                position: relative;
+                left: 0;
+                right: 0;
+
+                border: $lineWidth solid $lineColor;
+                line-height: 0;
+                margin: 0 20px 0 0;
+                padding: 0;
+                width: 256;
+                height: 256;
+                background-color: #FF0000;
+
+                #brightnessBase {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    z-index: 10;
+                }
+                #brightnessSelector {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 20;
+                    img {
+                        margin-top: -8px;
+                        margin-left: -8px;
+                    }
+                }
+            }
+            &#colorBox {
+                position: relative;
+                left: 0;
+                right: 0;
+
+                border: $lineWidth solid $lineColor;
+                line-height: 0;
+                margin: 0 20px 0 0;
+                padding: 0;
+
+                #colorBase {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    z-index: 20;
+                }
+                #colorSelector {
+                    position: absolute;
+                    left: -11px;
+                    top: 0;
+                    z-index: 10;
+                    img {
+                        margin-top: -7px;
+                    }
+                }
+            }
+
+            &#infoBox {
+                position: relative;
+                left: 0;
+                top: 0;
+                height: 258px;
+                #selectColor {
+                    width: 100px;
+                    height: 40px;
+                    background-color: #FF0000;
+                    border: $lineWidth solid $lineColor;
+                    margin: 5px 0;
+                }
+                #currentColor {
+                    width: 100px;
+                    height: 40px;
+                    background-color: #FF0000;
+                    border: $lineWidth solid $lineColor;
+                    margin: 5px 0;
+                }
+                input {
+                    width: 6em;
+                    margin: 5px 0;
+                    border: $lineWidth solid $lineColor;
+                }
+                #closeButton {
+                    position: absolute;
+                    bottom: 0;
+                    button {
+                        width: 100px;
+                        height: 30px;
+                        border: $lineWidth solid $lineColor;
+                    }
+                }
+
+            }
+        }
+    }
+}

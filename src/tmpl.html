@@ -1,0 +1,28 @@
+<link rel="import" rel="jquery.html" />
+
+<template id="nameOfTemplate">
+    <style>
+    </style>
+    <button>hello world</button>
+    <script>
+    </script>
+</template>
+
+<script>
+var nameSpaceName = document.register('namespace-name', {
+  prototype: Object.create(HTMLElement.prototype, {
+    any_prop: {
+      get: function() {
+        return 'any';
+      }
+    },
+    createdCallback: {
+        value: function(){
+            var shadowRoot = this.createShadowRoot();
+            var template = document.querySelector('#nameOfTemplate');
+            shadowRoot.appendChild(template.content.cloneNode(true));
+        }
+    }
+  })
+});
+</script>

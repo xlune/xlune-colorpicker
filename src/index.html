@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    	<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" />
+    <title>web-components-colorpicker</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+    <div id="colorPicker">
+        <p id="colorButtonWrap"><button id="colorButton"></button></p>
+        <div id="colorPalette">
+            <div id="brightnessBox">
+                <p id="brightnessBase">
+                    <img id="baseImage" src="./images/brightness.png" width="256" height="256" alt="Brightness" />
+                </p>
+                <p id="brightnessSelector">
+                    <img id="selectorImage" src="./images/brightness_selecter.png" width="16" height="16" alt="BrightnessSelector" />
+                </p>
+            </div>
+            <div id="colorBox">
+                <p id="colorBase">
+                    <img id="baseColorImage" src="./images/colors.png" width="20" height="256" alt="Colors" />
+                </p>
+                <p id="colorSelector">
+                    <img id="selectorColorImage" src="./images/colors_selecter.png" width="42" height="13" alt="ColorSelector" />
+                </p>
+            </div>
+            <div id="infoBox">
+                <div id="selectColor"></div>
+                <div id="currentColor"></div>
+                <div id="inputForm">
+                    <p><label>R: <input type="number" min="0" max="255" id="colorR" name="color_r" value="0" /></label></p>
+                    <p><label>G: <input type="number" min="0" max="255" id="colorG" name="color_g" value="0" /></label></p>
+                    <p><label>B: <input type="number" min="0" max="255" id="colorB" name="color_b" value="0" /></label></p>
+                    <p><label>#<input type="text" id="colorHex" name="color_hex" value="000000" /></label></p>
+                </div>
+                <p id="closeButton"><button>close</button></p>
+            </div>
+        </div>
+    </div>
+    <x-colorpicker></x-colorpicker>
+    <script type="text/javascript" src="./js/vendor.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

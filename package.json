@@ -1,0 +1,32 @@
+{
+  "name": "gulp-web-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuruga/gulp-web-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuruga/gulp-web-template/issues"
+  },
+  "homepage": "https://github.com/yuruga/gulp-web-template",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-coffee": "^2.2.0",
+    "gulp-compass": "^1.3.1",
+    "gulp-concat": "^2.4.1",
+    "gulp-connect": "^2.0.6",
+    "gulp-minify-css": "^0.3.10",
+    "gulp-rimraf": "^0.1.0",
+    "gulp-uglify": "^1.0.1",
+    "gulp-util": "^3.0.1",
+    "gulp-wait": "0.0.2",
+    "gulp-watch": "^1.0.7"
+  }
+}
